@@ -17,9 +17,10 @@
     "web-vitals": "^2.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "dev": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "coverage": "yarn test --coverage=true",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -39,5 +40,18 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": -1
+      }
+    }
+  },
+  "devDependencies": {
+    "prettier": "2.8.4"
   }
 }
