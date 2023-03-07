@@ -10,6 +10,12 @@ export const Counter = () => {
   return (
     <>
       <div data-testid="count">{count}</div>
+      <input
+        data-testid="count-input"
+        type="number"
+        value={count}
+        onChange={(e) => setCount(Number(e.target.value) || 0)}
+      />
       <button onClick={handleCount}>Count</button>
     </>
   )

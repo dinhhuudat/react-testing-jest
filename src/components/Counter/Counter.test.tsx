@@ -20,4 +20,12 @@ describe('Counter', () => {
     const countEL = screen.getByTestId('count')
     expect(countEL).toHaveTextContent('1')
   })
+
+  it('should render count when input', async () => {
+    render(<Counter />)
+    const countInput = screen.getByTestId('count-input')
+    user.type(countInput, '10')
+    const countEL = screen.getByTestId('count')
+    expect(countEL).toHaveTextContent('10')
+  })
 })

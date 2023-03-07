@@ -1,10 +1,10 @@
 import './App.css'
-import { FormWithRole } from './components/FormWithRole/FormWithRole'
+import { Counter } from './components/Counter/Counter'
 
 function App() {
   return (
     <div className="App">
-      <FormWithRole />
+      <Counter />
     </div>
   )
 }
