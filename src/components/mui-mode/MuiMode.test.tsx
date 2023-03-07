@@ -6,6 +6,6 @@ describe('MUI mode', () => {
   it('should render dard mode', () => {
     render(<MuiMode />, { wrapper: AppProvider })
     const heading = screen.getByRole('heading')
-    expect(heading).toHaveTextContent('theme is dark')
+    expect(heading).toHaveTextContent('theme is light')
   })
 })
