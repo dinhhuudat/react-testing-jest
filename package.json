@@ -25,11 +25,12 @@
   "scripts": {
     "dev": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test -o --watch",
+    "test": "react-scripts test",
     "coverage": "yarn test --coverage=true --watchAll=false",
     "eject": "react-scripts eject",
     "lint": "eslint --ignore-path .gitignore .",
-    "format":"prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,css,scss}\""
+    "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,css,scss}\"",
+    "prepare": "husky install"
   },
   "eslintConfig": {
     "extends": [
@@ -62,6 +63,7 @@
     }
   },
   "devDependencies": {
-    "prettier": "^2.8.4"
+    "prettier": "^2.8.4",
+    "husky": "^8.0.0"
   }
 }
