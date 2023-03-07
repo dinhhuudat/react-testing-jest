@@ -15,6 +15,7 @@
     "@types/react-dom": "^18.0.0",
     "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-jest-dom": "^4.0.3",
+    "lint-staged": "^13.1.2",
     "msw": "^1.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -32,6 +33,15 @@
     "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,css,scss}\"",
     "prepare": "husky install"
   },
+  "lint-staged":{
+    "*.{ts,tsx}": [ 
+      "eslint --ignore-path.gitignore --fix"
+    ],
+    "*.{ts,tsx,css,scss}": [
+      "prettier --ignore-path.gitignore --write \"**/*.{ts,tsx,css,scss}\"" 
+    ]
+  }
+  ,
   "eslintConfig": {
     "extends": [
       "react-app",
