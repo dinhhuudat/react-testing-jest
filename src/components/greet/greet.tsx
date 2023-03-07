@@ -1,8 +1,8 @@
-type TGreetProps={
-    name:string
+type TGreetProps = {
+  name: string
 }
 
-export const Greet =(props:TGreetProps)=>{
-    if(!props.name) return <></>
-    return <div>{props.name || "rada"}</div>
+export const Greet = (props: TGreetProps) => {
+  if (!props.name) return <></>
+  return <div>{props.name || 'rada'}</div>
 }
